@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <section id="home-content" class="top-menu">
+
+      {% assign sorted_pages = site.pages | where:"lang",page.language | sort:"order" %}
+      {% for my_page in sorted_pages %}
+        {% if my_page.title %}
+        {{ my_page.content }}
+        {% endif %}
+      {% endfor %}
+
+      {% include footer.html %}
+    </section>
+
+    <script>
+        var markers = [
+            ['Villa Tantafera', 43.8108291, 11.2681963, 'wedding','Insert Some Demo Text Here'],
+            ['Airport', 43.80847163, 11.20105362, 'airport','Insert Some Demo Text Here'],
+            // ['Name of Place, Paris', 48.8588589, 2.3470599, 'restaurant','Insert Some Demo Text Here'],
+            ['Name of Place, Paris', 43.773035, 11.25583668, 'attraction','Insert Some Demo Text Here'],
+            // ['Name of Place, Paris', 48.8845034, 2.3599466, 'shopping','Insert Some Demo Text Here'],
+            // ['Name of Place, Paris', 48.8894376, 2.3495625, 'special','Insert Some Demo Text Here'],
+            // ['Name of Place, Paris', 48.8888826, 2.3477870, 'hotel','Insert Some Demo Text Here'],
+            // ['Name of Place, Paris', 48.8922916, 2.3407284, 'weddingParty','Insert Some Demo Text Here']
+        ];
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="assets/js/device.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/jquery.isotope.sloppy-masonry.min.js"></script>
+    <script src="assets/js/jquery.scrollTo.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.mb.YTPlayer.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/retina.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+
+</html>

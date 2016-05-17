@@ -7,7 +7,7 @@
                 <div id="menu-logo" >J <span>&amp;</span> P</div>
                 <nav id="navigation" class="column twelve">
                     <ul>
-                        <li><a href="#logo">Home</a></li>
+                        <li><a href="#logo">{% if page.language == "cz" %}Úvod{% else %}Home{% endif %}</a></li>
                         {% assign sorted_pages = site.pages | where:"lang",page.language | sort:"order" %}
                         {% for my_page in sorted_pages %}
                           {% if my_page.title %}
@@ -26,14 +26,25 @@
     </header>
     <div class="overlay-dark"></div>
     <div class="container">
+       {% if page.language == "cz" %}
         <div class="hero-inner">
-            <h1>We’re getting married.</h1>
+            <h1>Budeme se brát!</h1>
             <div class="info">
-                <div id="countdown"> 462 <span>days</span> 18 <span>hours</span> 46 <span>mins</span> 34 <span>secs</span></div>
+                <div id="countdown"> 322 <span>days</span> 18 <span>hours</span> 46 <span>mins</span> 34 <span>secs</span></div>
+                <span class="date">3. června 2017, Florencie, Itálie</span>
+            </div>
+            <a href="#couple" class="mouse scrollTo"><i class="fa fa-long-arrow-down"></i></a>
+        </div>
+       {% else %}
+        <div class="hero-inner">
+            <h1>We’re getting married!</h1>
+            <div class="info">
+                <div id="countdown"> 322 <span>days</span> 18 <span>hours</span> 46 <span>mins</span> 34 <span>secs</span></div>
                 <span class="date">on June 3rd 2017, Florence, Italy</span>
             </div>
             <a href="#couple" class="mouse scrollTo"><i class="fa fa-long-arrow-down"></i></a>
         </div>
+       {% endif %}
     </div>
 </section>
 <!-- #Hero Section Ends -->

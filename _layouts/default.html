@@ -9,7 +9,7 @@
 
     <section id="home-content" class="top-menu">
 
-      {% assign sorted_pages = site.pages | where:"lang",page.language | sort:"order" %}
+      {% assign sorted_pages = site.pages | where:"lang", page.language | sort:"order" %}
       {% for my_page in sorted_pages %}
         {% if my_page.title %}
         {{ my_page.content }}

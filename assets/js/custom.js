@@ -312,17 +312,17 @@ if (!Array.prototype.indexOf) {
             }
 
             var markerImages = {
-                airport: { url:'assets/images/map/MapPins-small-red1.png',size: new google.maps.Size(35, 58),origin: new google.maps.Point(0, 0),anchor: new google.maps.Point(0, 0),scaledSize: new google.maps.Size(35, 344)},
-				hotel: { url:'assets/images/map/MapPins-small-red1.png',size: new google.maps.Size(35, 58),origin: new google.maps.Point(0, 58),anchor: new google.maps.Point(0, 0),scaledSize: new google.maps.Size(35, 344)},
-				restaurant: { url:'assets/images/map/MapPins-small-red1.png',size: new google.maps.Size(35, 58),origin: new google.maps.Point(0, 116),anchor: new google.maps.Point(0, 0),scaledSize: new google.maps.Size(35, 344) },
-				shopping: { url:'assets/images/map/MapPins-small-red1.png',size: new google.maps.Size(35, 58),origin: new google.maps.Point(0, 174),anchor: new google.maps.Point(0, 0),scaledSize: new google.maps.Size(35, 344) },    
-				attraction: { url:'assets/images/map/MapPins-small-red1.png',size: new google.maps.Size(35, 58),origin: new google.maps.Point(0, 232),anchor: new google.maps.Point(0, 0),scaledSize: new google.maps.Size(35, 344) },
-				special: { url:'assets/images/map/MapPins-small-red1.png',size: new google.maps.Size(35, 54),origin: new google.maps.Point(0, 290),anchor: new google.maps.Point(0, 0),scaledSize: new google.maps.Size(35, 344) },
+                airport: { url:'/assets/images/map/MapPins-small-red1.png',size: new google.maps.Size(35, 58),origin: new google.maps.Point(0, 0),anchor: new google.maps.Point(0, 0),scaledSize: new google.maps.Size(35, 344)},
+				hotel: { url:'/assets/images/map/MapPins-small-red1.png',size: new google.maps.Size(35, 58),origin: new google.maps.Point(0, 58),anchor: new google.maps.Point(0, 0),scaledSize: new google.maps.Size(35, 344)},
+				restaurant: { url:'/assets/images/map/MapPins-small-red1.png',size: new google.maps.Size(35, 58),origin: new google.maps.Point(0, 116),anchor: new google.maps.Point(0, 0),scaledSize: new google.maps.Size(35, 344) },
+				shopping: { url:'/assets/images/map/MapPins-small-red1.png',size: new google.maps.Size(35, 58),origin: new google.maps.Point(0, 174),anchor: new google.maps.Point(0, 0),scaledSize: new google.maps.Size(35, 344) },    
+				attraction: { url:'/assets/images/map/MapPins-small-red1.png',size: new google.maps.Size(35, 58),origin: new google.maps.Point(0, 232),anchor: new google.maps.Point(0, 0),scaledSize: new google.maps.Size(35, 344) },
+				special: { url:'/assets/images/map/MapPins-small-red1.png',size: new google.maps.Size(35, 54),origin: new google.maps.Point(0, 290),anchor: new google.maps.Point(0, 0),scaledSize: new google.maps.Size(35, 344) },
 		
-				bachelor: { url:'assets/images/map/MapPins-big-red1.png',size: new google.maps.Size(53, 93),origin: new google.maps.Point(0, 0),anchor: new google.maps.Point(0, 0),scaledSize: new google.maps.Size(53, 372) },
-				bachelorette: { url:'assets/images/map/MapPins-big-red1.png',size: new google.maps.Size(53, 93),origin: new google.maps.Point(0, 93),anchor: new google.maps.Point(0, 0),scaledSize: new google.maps.Size(53, 372) },
-				wedding: { url:'assets/images/map/MapPins-big-red1.png',size: new google.maps.Size(53, 93),origin: new google.maps.Point(0, 186),anchor: new google.maps.Point(0, 0),scaledSize: new google.maps.Size(53, 372) },
-				weddingParty: { url:'assets/images/map/MapPins-big-red1.png',size: new google.maps.Size(53, 93),origin: new google.maps.Point(0, 279),anchor: new google.maps.Point(0, 0),scaledSize: new google.maps.Size(53, 372) },
+				bachelor: { url:'/assets/images/map/MapPins-big-red1.png',size: new google.maps.Size(53, 93),origin: new google.maps.Point(0, 0),anchor: new google.maps.Point(0, 0),scaledSize: new google.maps.Size(53, 372) },
+				bachelorette: { url:'/assets/images/map/MapPins-big-red1.png',size: new google.maps.Size(53, 93),origin: new google.maps.Point(0, 93),anchor: new google.maps.Point(0, 0),scaledSize: new google.maps.Size(53, 372) },
+				wedding: { url:'/assets/images/map/MapPins-big-red1.png',size: new google.maps.Size(53, 93),origin: new google.maps.Point(0, 186),anchor: new google.maps.Point(0, 0),scaledSize: new google.maps.Size(53, 372) },
+				weddingParty: { url:'/assets/images/map/MapPins-big-red1.png',size: new google.maps.Size(53, 93),origin: new google.maps.Point(0, 279),anchor: new google.maps.Point(0, 0),scaledSize: new google.maps.Size(53, 372) },
             };
 
             var mapOptions = {

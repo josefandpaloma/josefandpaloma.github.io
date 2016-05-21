@@ -234,7 +234,8 @@ h6 {
   line-height: 16px; }
 
 p {
-  margin: 0 0 25px 0; }
+  margin: 0 0 25px 0;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif; }
 
 p img {
   margin: 0; }
@@ -1112,6 +1113,20 @@ a.button i {
 #main-menu a:hover, #main-menu a.active {
   color: #FF8C89;
   text-decoration: none; }
+
+#main-menu ul li.lang {
+  color: #666666; }
+
+#main-menu ul li.lang:hover a {
+  color: #666666; }
+
+#main-menu ul li.lang a {
+  display: inline; }
+  #main-menu ul li.lang a:hover {
+    color: #66adaa; }
+
+#main-menu ul li.lang a.is-selected {
+  font-weight: bold; }
 
 #main-menu.header-hide {
   -webkit-transform: translateY(0%);

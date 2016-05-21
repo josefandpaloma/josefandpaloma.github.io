@@ -63,6 +63,11 @@ a.button.fill {
     color: #66adaa;
 }
 
+
+#main-menu li.lang:hover > a {
+    color: #000;
+}
+
 #invitation a {
     background: #66adaa;
 }

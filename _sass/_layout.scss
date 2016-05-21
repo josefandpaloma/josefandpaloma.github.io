@@ -91,6 +91,7 @@ h6 {
 }
 p {
     margin: 0 0 25px 0;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 p img {
     margin: 0;
@@ -655,6 +656,7 @@ a.button i {
 .hero #main-menu {
     border-top: 1px solid #f3f3f3;
 }
+
 .hero .container {
     display: table;
     height: 100%;
@@ -1013,6 +1015,24 @@ a.button i {
     color: #FF8C89;
     text-decoration: none;
 }
+
+
+#main-menu ul li.lang {
+    color: #666666;
+}
+#main-menu ul li.lang:hover a {
+    color: #666666;   
+}
+#main-menu ul li.lang a {
+    display: inline;
+    &:hover {
+        color: #66adaa;
+    }
+}
+#main-menu ul li.lang a.is-selected {
+    font-weight: bold;
+}
+
 #main-menu.header-hide {
     -webkit-transform: translateY(0%);
     -moz-transform: translateY(0%);
@@ -1025,6 +1045,8 @@ a.button i {
     -moz-transform: translateY(0%);
     transform: translateY(0%);
 }
+
+
 /* DropDown */
 
 #main-menu ul ul {

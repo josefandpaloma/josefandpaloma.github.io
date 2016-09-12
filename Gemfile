@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 
-gem 'jekyll', "3.0.5"
+gem 'jekyll', "3.2.1"
 gem 'jekyll-paginate'
 gem 'jekyll-multiple-languages'
 

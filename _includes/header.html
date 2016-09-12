@@ -1,51 +1,51 @@
 <!-- Hero Section -->
 <div id="logo">Josef <span>&amp;</span> Paloma</div>
 <section id="top" class="hero" data-type="parallax">
-    <header id="main-menu">
-        <div class="container">
-            <div class="row">
-                <div id="menu-logo" >J <span>&amp;</span> P</div>
-                <nav id="navigation" class="column twelve">
-                    <ul>
-                        <li><a href="#logo">{% if page.language == "cz" %}Úvod{% else %}Home{% endif %}</a></li>
-                        {% assign sorted_pages = site.pages | where:"lang",page.language | sort:"order" %}
-                        {% for my_page in sorted_pages %}
-                          {% if my_page.title and my_page.exclude != true%}
-                          <li><a href="#{{ my_page.permalink }}">{{ my_page.title }}</a></li>
-                          {% endif %}
-                        {% endfor %}
-                        <li class="lang">
-                            <a href="/" class="{% if page.language == "en" %}is-selected{% endif %}">EN</a>/<a href="/cz/" class="{% if page.language == "cz" %}is-selected{% endif %}">CZ</a>
-                        </li>
-                    </ul>
-                </nav>
-                <a href="#" id="menu-toggle-wrapper">
-                    <div id="menu-toggle"></div>
-                </a>
-            </div>
-            <!-- close .ha-header-perspective -->
-        </div>
-        <!-- close grid container -->
-    </header>
-    <div class="overlay-dark"></div>
+  <header id="main-menu">
     <div class="container">
-       {% if page.language == "cz" %}
-        <div class="hero-inner">
-            <h1>Budeme se brát!</h1>
-            <div class="info">
-                <div id="countdown"> 322 <span>days</span> 18 <span>hours</span> 46 <span>mins</span> 34 <span>secs</span></div>
-                <span class="date">3. června 2017, Florencie, Itálie</span>
-            </div>
-        </div>
-       {% else %}
-        <div class="hero-inner">
-            <h1>We’re getting married!</h1>
-            <div class="info">
-                <div id="countdown"> 322 <span>days</span> 18 <span>hours</span> 46 <span>mins</span> 34 <span>secs</span></div>
-                <span class="date">on June 3rd 2017, Florence, Italy</span>
-            </div>
-        </div>
-       {% endif %}
+      <div class="row">
+        <div id="menu-logo" >J <span>&amp;</span> P</div>
+        <nav id="navigation" class="column twelve">
+          <ul>
+            <li><a href="#logo">{% if page.language == "cz" %}Úvod{% else %}Home{% endif %}</a></li>
+            {% assign sorted_pages = site.pages | where:"lang",page.language | sort:"order" %}
+            {% for my_page in sorted_pages %}
+              {% if my_page.title and my_page.exclude != true%}
+              <li><a href="#{{ my_page.permalink }}">{{ my_page.title }}</a></li>
+              {% endif %}
+            {% endfor %}
+            <li class="lang">
+                <a href="/" class="{% if page.language == "en" %}is-selected{% endif %}">EN</a>/<a href="/cz/" class="{% if page.language == "cz" %}is-selected{% endif %}">CZ</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#" id="menu-toggle-wrapper">
+          <div id="menu-toggle"></div>
+        </a>
+      </div>
+      <!-- close .ha-header-perspective -->
     </div>
+    <!-- close grid container -->
+  </header>
+  <div class="overlay-dark"></div>
+  <div class="container">
+   {% if page.language == "cz" %}
+    <div class="hero-inner">
+      <h1>Budeme se brát!</h1>
+      <div class="info">
+        <div id="countdown"> 322 <span>days</span> 18 <span>hours</span> 46 <span>mins</span> 34 <span>secs</span></div>
+        <span class="date">3. června 2017, Florencie, Itálie</span>
+      </div>
+    </div>
+   {% else %}
+    <div class="hero-inner">
+      <h1>We’re getting married!</h1>
+      <div class="info">
+        <div id="countdown"> 322 <span>days</span> 18 <span>hours</span> 46 <span>mins</span> 34 <span>secs</span></div>
+        <span class="date">on June 3rd 2017, Florence, Italy</span>
+      </div>
+    </div>
+   {% endif %}
+  </div>
 </section>
 <!-- #Hero Section Ends -->

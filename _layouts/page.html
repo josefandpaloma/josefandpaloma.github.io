@@ -1,14 +1,46 @@
----
-layout: default
----
-<article class="post">
+<!DOCTYPE html>
+<html>
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
+  {% include head.html %}
 
-  <div class="post-content">
-    {{ content }}
-  </div>
+  <body class="page">
 
-</article>
+    <header class="fixed no-image">
+      {% if page.language == "cz" %}
+        <a href="/cz/" id="back-home">zpět na úvodní stránku</a>
+      {% else %}
+        <a href="/" id="back-home">back to home</a>
+      {% endif %}
+      <div id="title">
+        <div class="container">
+          <div class="row">
+            <div class="column twelve">
+              <h1>{{ page.title }}</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="page-content" class="no-image">
+      {{ content }}
+    </section>
+
+    {% include footer.html %}
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="{{ 'assets/js/device.min.js' | prepend: site.baseurl | prepend: site.url }}"></script>
+    <script src="{{ 'assets/js/imagesloaded.pkgd.js' | prepend: site.baseurl | prepend: site.url }}"></script>
+    <script src="{{ 'assets/js/isotope.js' | prepend: site.baseurl | prepend: site.url }}"></script>
+    <script src="{{ 'assets/js/jquery.isotope.sloppy-masonry.min.js' | prepend: site.baseurl | prepend: site.url }}"></script>
+    <script src="{{ 'assets/js/jquery.scrollTo.js' | prepend: site.baseurl | prepend: site.url }}"></script>
+    <script src="{{ 'assets/js/waypoints.min.js' | prepend: site.baseurl | prepend: site.url }}"></script>
+    <script src="{{ 'assets/js/jquery.mb.YTPlayer.js' | prepend: site.baseurl | prepend: site.url }}"></script>
+    <script src="{{ 'assets/js/jquery.magnific-popup.min.js' | prepend: site.baseurl | prepend: site.url }}"></script>
+    <script src="{{ 'assets/js/wow.min.js' | prepend: site.baseurl | prepend: site.url }}"></script>
+    <script src="{{ 'assets/js/retina.min.js' | prepend: site.baseurl | prepend: site.url }}"></script>
+    <script src="{{ 'assets/js/custom.js' | prepend: site.baseurl | prepend: site.url }}"></script>
+  </body>
+
+</html>
